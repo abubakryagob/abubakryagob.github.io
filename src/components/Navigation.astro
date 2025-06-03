@@ -1,0 +1,44 @@
+---
+const navItems = [
+  { href: "#home", text: "Home" },
+  { href: "#about", text: "About" },
+  { href: "#research", text: "Research" },
+  { href: "#publications", text: "Publications" },
+  { href: "#cv", text: "CV" },
+  { href: "#talks", text: "Talks" },
+  { href: "#outreach", text: "Outreach" },
+  { href: "#blog", text: "Blog" },
+  { href: "#contact", text: "Contact" }
+];
+---
+
+<nav class="fixed top-0 w-full bg-space-blue-dark/80 backdrop-blur-md z-50 border-b border-space-blue-light/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center">
+        <a href="#" class="text-white font-bold text-xl hover:text-space-blue-light transition-colors">Abubakr Ibrahim</a>
+      </div>
+      <div class="hidden md:block">
+        <div class="flex items-baseline space-x-4">
+          {
+            navItems.map(({ href, text }) => (
+              <a
+                href={href}
+                class="text-gray-300 hover:text-space-blue-light px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              >
+                {text}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <div class="md:hidden">
+        <button type="button" class="text-gray-400 hover:text-white" aria-label="Open menu">
+          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

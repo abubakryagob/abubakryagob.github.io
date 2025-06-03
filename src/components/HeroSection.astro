@@ -1,0 +1,35 @@
+---
+import StarBackground from './StarBackground.astro';
+---
+
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <StarBackground />
+  <div class="absolute inset-0 bg-gradient-to-b from-space-blue-dark/50 to-transparent"></div>
+  <div class="relative z-10 text-center px-4 fade-in">
+    <img
+      src="/your-photo.jpg"
+      alt="Abubakr Ibrahim"
+      class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-space-blue-light/30 shadow-xl shadow-space-blue/20"
+    />
+    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+      Abubakr Ibrahim
+    </h1>
+    <p class="text-xl md:text-2xl text-space-blue-light mb-8">
+      Astrophysicist – Magnetars, X-rays, and Outreach
+    </p>
+    <div class="flex justify-center gap-4">
+      <a
+        href="#contact"
+        class="bg-space-orange text-white px-8 py-3 rounded-full font-semibold hover:bg-space-orange-light transition-colors duration-200 shadow-lg shadow-space-orange/20"
+      >
+        Get in Touch
+      </a>
+      <a
+        href="#research"
+        class="bg-space-blue-light/10 text-white px-8 py-3 rounded-full font-semibold hover:bg-space-blue-light/20 transition-colors duration-200 border border-space-blue-light/30"
+      >
+        View Research
+      </a>
+    </div>
+  </div>
+</section>

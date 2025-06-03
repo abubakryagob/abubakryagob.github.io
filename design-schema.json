@@ -1,0 +1,269 @@
+#8ecae6",
+"mediumBlue": "#219ebc",
+"darkBlue": "#023047",
+"accentYellow": "#ffb703",
+"accentOrange": "#fb8500",
+"white": "#FFFFFF",
+"offWhite": "#F8F9FA",
+"lightGray": "#DEE2E6",
+"mediumGray": "#CED4DA",
+"darkGray": "#495057"
+},
+"semantic": {
+"primary": "var(--color-mediumBlue)",
+"secondary": "var(--color-lightBlue)",
+"backgroundLight": "var(--color-offWhite)",
+"backgroundPage": "var(--color-white)",
+"backgroundDark": "var(--color-darkBlue)",
+"textPrimary": "var(--color-darkBlue)",
+"textSecondary": "var(--color-darkGray)",
+"textOnDark": "var(--color-white)",
+"textOnPrimary": "var(--color-white)",
+"textOnAccent": "var(--color-darkBlue)",
+"accent1": "var(--color-accentYellow)",
+"accent2": "var(--color-accentOrange)",
+"border": "var(--color-lightGray)",
+"borderFocus": "var(--color-primary)"
+}
+},
+"components": {
+"navigation": {
+"linkPadding": "0.5rem 1rem",
+"linkColor": "textPrimary",
+"linkHoverColor": "primary",
+"linkActiveColor": "primary",
+"linkActiveFontWeight": "600",
+"linkActiveTextDecoration": "underline",
+"linkTextDecorationThickness": "2px",
+"dropdown": {
+"backgroundColor": "backgroundLight",
+"borderColor": "border",
+"itemPadding": "0.5rem 1rem",
+"linkColor": "textPrimary",
+"linkHoverColor": "primary",
+"linkHoverBackgroundColor": "secondary"
+}
+},
+"buttons": {
+"base": {
+"padding": "0.75rem 1.5rem",
+"fontSize": "1rem",
+"fontWeight": "600",
+"borderRadius": "var(--border-radius-medium)",
+"textDecoration": "none",
+"display": "inline-block",
+"textAlign": "center",
+"transition": "background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function), border-color var(--transition-duration) var(--transition-timing-function)"
+},
+"primary": {
+"backgroundColor": "primary",
+"textColor": "textOnPrimary",
+"border": "1px solid var(--color-primary)",
+"hoverBackgroundColor": "var(--color-darkBlue)",
+"hoverBorderColor": "var(--color-darkBlue)"
+},
+"secondary": {
+"backgroundColor": "secondary",
+"textColor": "textPrimary",
+"border": "1px solid var(--color-secondary)",
+"hoverBackgroundColor": "var(--color-mediumBlue)",
+"hoverTextColor": "textOnPrimary",
+"hoverBorderColor": "var(--color-mediumBlue)"
+},
+"accent": {
+"backgroundColor": "accent1",
+"textColor": "textOnAccent",
+"border": "1px solid var(--color-accent1)",
+"hoverBackgroundColor": "accent2",
+"hoverBorderColor": "accent2",
+"hoverTextColor": "textOnPrimary"
+},
+"outline": {
+"backgroundColor": "transparent",
+"textColor": "primary",
+"border": "1px solid var(--color-primary)",
+"hoverBackgroundColor": "primary",
+"hoverTextColor": "textOnPrimary"
+}
+},
+"heroSection": {
+"minHeight": "50vh",
+"display": "flex",
+"alignItems": "center",
+"justifyContent": "center",
+"padding": "var(--section-padding-y) var(--page-gutter-padding)",
+"backgroundColor": "darkBlue",
+"backgroundImage": {
+"size": "cover",
+"position": "center"
+},
+"overlay": {
+"apply": true,
+"color": "rgba(2, 48, 71, 0.5)",
+"opacity": 1
+},
+"textAlign": "center",
+"title": {
+"fontSize": "var(--h1-font-size)",
+"color": "textOnDark",
+"marginBottom": "1rem"
+},
+"subtitle": {
+"fontSize": "var(--h3-font-size)",
+"color": "lightBlue",
+"fontWeight": "400",
+"maxWidth": "700px",
+"margin": "0 auto"
+}
+},
+"cards": {
+"backgroundColor": "backgroundLight",
+"borderRadius": "var(--border-radius-large)",
+"boxShadow": "var(--shadow-subtle)",
+"padding": "1.5rem",
+"marginBottom": "1.5rem",
+"display": "flex",
+"flexDirection": "column",
+"image": {
+"aspectRatio": "16/9",
+"objectFit": "cover",
+"borderRadius": "var(--border-radius-medium) var(--border-radius-medium) 0 0",
+"marginBottom": "1rem"
+},
+"title": {
+"fontSize": "var(--h4-font-size)",
+"color": "textPrimary",
+"marginBottom": "0.5rem"
+},
+"excerpt": {
+"fontSize": "var(--base-font-size)",
+"color": "textSecondary",
+"lineHeight": "1.5",
+"marginBottom": "1rem"
+},
+"metadata": {
+"fontSize": "var(--small-text-font-size)",
+"color": "textSecondary"
+},
+"linkStyle": "stretched"
+},
+"lists": {
+"unstyled": {
+"listStyle": "none",
+"paddingLeft": "0"
+},
+"itemMarginBottom": "0.75rem",
+"markerColor": "primary",
+"definition": {
+"termFontWeight": "600",
+"termMarginBottom": "0.25rem"
+}
+},
+"forms": {
+"input": {
+"padding": "0.75rem 1rem",
+"fontSize": "1rem",
+"lineHeight": "1.5",
+"color": "textPrimary",
+"backgroundColor": "white",
+"border": "1px solid var(--color-border)",
+"borderRadius": "var(--border-radius-medium)",
+"focusBorderColor": "borderFocus",
+"focusBoxShadow": "0 0 0 0.2rem rgba(var(--rgb-primary), 0.25)"
+},
+"label": {
+"marginBottom": "0.5rem",
+"fontWeight": "500"
+}
+}
+},
+"responsiveBehavior": {
+"breakpoints": {
+"xs": "0px",
+"sm": "640px",
+"md": "768px",
+"lg": "1024px",
+"xl": "1280px"
+},
+"navigation": {
+"collapseToHamburgerBelow": "lg",
+"hamburgerIconColor": "primary",
+"mobileMenu": {
+"type": "slide-in-right",
+"backgroundColor": "backgroundLight",
+"padding": "2rem",
+"linkColor": "textPrimary",
+"linkHoverColor": "primary",
+"closeIconColor": "textPrimary"
+}
+},
+"layoutAdjustments": {
+"gridColumns": {
+"cardList": {
+"default": 1,
+"sm": 2,
+"lg": 3
+}
+},
+"typographyScaling": false
+},
+"imageHandling": {
+"fluidImages": {
+"maxWidth": "100%",
+"height": "auto"
+},
+"heroImageScaling": "Handled by background-size: cover; consider art direction for drastically different aspect ratios."
+},
+"spacing": {
+"sectionPaddingY": {
+"default": "4rem",
+"md": "3rem",
+"sm": "2.5rem"
+},
+"pageGutterPadding": {
+"default": "1.5rem",
+"sm": "1rem"
+}
+}
+},
+"styling": {
+"baseUnits": {
+"spacingUnit": "1rem",
+"remBaseSize": "16px"
+},
+"borders": {
+"width": "1px",
+"style": "solid",
+"color": "var(--color-border)",
+"radius": {
+"none": "0",
+"small": "0.125rem",
+"medium": "0.25rem",
+"large": "0.5rem",
+"xlarge": "1rem",
+"pill": "9999px",
+"circle": "50%"
+}
+},
+"shadows": {
+"subtle": "0 2px 4px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03)",
+"medium": "0 4px 8px rgba(0,0,0,0.07), 0 2px 6px rgba(0,0,0,0.05)",
+"large": "0 10px 20px rgba(0,0,0,0.1), 0 6px 12px rgba(0,0,0,0.08)"
+},
+"imageStyling": {
+"defaultBorderRadius": "var(--border-radius-none)",
+"defaultDisplay": "block",
+"defaultObjectFit": "cover"
+},
+"transitions": {
+"duration": "0.2s",
+"timingFunction": "ease-in-out"
+},
+"focusStyles": {
+"outline": "2px solid var(--color-borderFocus)",
+"outlineOffset": "2px",
+"boxShadow": "0 0 0 0.2rem rgba(var(--rgb-primary), 0.25)"
+}
+}
+}
+

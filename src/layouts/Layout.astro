@@ -1,0 +1,178 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { 
+	title = "Abubakr Ibrahim | Astrophysicist",
+	description = "Abubakr Ibrahim - Astrophysicist, Researcher, and Science Communicator"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="astrophysics, research, science communication, astronomy, magnetars, x-ray astronomy" />
+		<meta name="author" content="Abubakr Ibrahim" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<title>{title}</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-gradient-to-b from-space-blue-dark to-black">
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		/* Colors */
+		--color-lightBlue: #8ecae6;
+		--color-mediumBlue: #219ebc;
+		--color-darkBlue: #023047;
+		--color-accentYellow: #ffb703;
+		--color-accentOrange: #fb8500;
+		--color-white: #FFFFFF;
+		--color-offWhite: #F8F9FA;
+		--color-lightGray: #DEE2E6;
+		--color-mediumGray: #CED4DA;
+		--color-darkGray: #495057;
+
+		/* Semantic Colors */
+		--color-primary: var(--color-mediumBlue);
+		--color-secondary: var(--color-lightBlue);
+		--color-background-light: var(--color-offWhite);
+		--color-background-page: var(--color-white);
+		--color-background-dark: var(--color-darkBlue);
+		
+		/* Typography */
+		--font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+		--base-font-size: 16px;
+		--h1-font-size: 3rem;
+		--h3-font-size: 1.75rem;
+		--h4-font-size: 1.25rem;
+		
+		/* Spacing */
+		--section-padding-y: 4rem;
+		--page-gutter-padding: 1.5rem;
+		
+		/* Borders */
+		--border-radius-none: 0;
+		--border-radius-small: 0.125rem;
+		--border-radius-medium: 0.25rem;
+		--border-radius-large: 0.5rem;
+		--border-radius-xlarge: 1rem;
+		--border-radius-pill: 9999px;
+		
+		/* Transitions */
+		--transition-duration: 0.2s;
+		--transition-timing-function: ease-in-out;
+		
+		/* Shadows */
+		--shadow-subtle: 0 2px 4px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+		--shadow-medium: 0 4px 8px rgba(0,0,0,0.07), 0 2px 6px rgba(0,0,0,0.05);
+		--shadow-large: 0 10px 20px rgba(0,0,0,0.1), 0 6px 12px rgba(0,0,0,0.08);
+	}
+
+	/* Scrollbar Styling */
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgba(2, 48, 71, 0.1);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(251, 133, 0, 0.5);
+		border-radius: 4px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba(251, 133, 0, 0.7);
+	}
+
+	/* Custom Selection Color */
+	::selection {
+		background: rgba(251, 133, 0, 0.3);
+		color: white;
+	}
+
+	/* Basic Reset and Global Styles */
+	html {
+		font-family: var(--font-family-base);
+		font-size: var(--base-font-size);
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		min-height: 100vh;
+		line-height: 1.5;
+		color: var(--color-white);
+		overflow-x: hidden;
+	}
+
+	/* Animations */
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(20px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	@keyframes float {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-20px); }
+	}
+
+	.fade-in {
+		animation: fadeIn 1s ease-out;
+	}
+
+	.float {
+		animation: float 6s ease-in-out infinite;
+	}
+
+	/* Section Transitions */
+	section {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	}
+
+	section.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	/* Glass Effect */
+	.glass {
+		background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+</style>
+
+<script>
+	// Intersection Observer for section animations
+	const sections = document.querySelectorAll('section');
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('visible');
+			}
+		});
+	}, {
+		threshold: 0.1
+	});
+
+	sections.forEach(section => observer.observe(section));
+</script>
