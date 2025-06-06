@@ -21,15 +21,50 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
   <div class="flex flex-col min-h-screen">
     <Navigation />
     <main class="flex-grow">
-      <HeroSection />
-      <AboutSection />
-      <ResearchSection />
-      <PublicationsSection />
-      <CVSection />
-      <TalksSection />
-      <OutreachSection />
-      <BlogSection />
-      <ContactSection />
+      <section class="relative min-h-[60vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-space-blue-dark/80 to-black pb-16">
+        <img src="/images/gallery/Abubakr.jpg" alt="Abubakr Ibrahim" class="w-40 h-40 rounded-full border-4 border-space-blue-light/30 shadow-xl mb-6 mt-12" />
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">Abubakr Ibrahim</h1>
+        <p class="text-xl md:text-2xl text-space-blue-light mb-4">Astrophysicist | Magnetar Explorer | Science Communicator</p>
+        <p class="max-w-2xl text-lg text-[#F8F9FA]/90 mb-6">Welcome! I research the universe's most extreme objects—magnetars and neutron stars—using X-ray astronomy, and share the wonders of science through outreach and education.</p>
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="/research" class="bg-space-blue-light/10 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-light/20 border border-space-blue-light/30 transition">Research</a>
+          <a href="/publications" class="bg-space-orange/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-orange/40 border border-space-orange/30 transition">Publications</a>
+          <a href="/outreach" class="bg-space-blue/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue/30 border border-space-blue-light/30 transition">Outreach</a>
+          <a href="/cv" class="bg-space-blue-dark/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-dark/50 border border-space-blue-light/30 transition">CV</a>
+          <a href="/contact" class="bg-space-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-space-orange-light transition">Contact</a>
+        </div>
+      </section>
+      <section class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-bold text-space-blue-light mb-4">About Me</h2>
+          <p class="text-[#F8F9FA]/90 mb-4">I am a postdoctoral researcher at the Institute of Space Sciences (ICE-CSIC), specializing in the study of magnetars and X-ray astronomy. My work combines observational data from space telescopes with theoretical modeling to unlock the mysteries of neutron stars with ultra-strong magnetic fields.</p>
+          <a href="/about" class="inline-block mt-2 text-space-orange hover:underline font-semibold">Read more &rarr;</a>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-space-blue-light mb-4">Latest News</h2>
+          <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 mb-2">
+            <span class="text-space-orange text-sm font-semibold">June 2025</span>
+            <h3 class="text-lg font-semibold text-white mt-1 mb-1">New Magnetar Paper Published</h3>
+            <p class="text-[#F8F9FA]/80">Our latest research on SGR J1935+2154 is now out in ApJ! <a href="/publications" class="text-space-blue-light hover:underline">See Publications</a></p>
+          </div>
+          <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10">
+            <span class="text-space-orange text-sm font-semibold">May 2025</span>
+            <h3 class="text-lg font-semibold text-white mt-1 mb-1">Outreach Event at Barcelona Schools</h3>
+            <p class="text-[#F8F9FA]/80">Engaged with students about the wonders of astronomy and shared our latest research. <a href="/outreach" class="text-space-blue-light hover:underline">See Outreach</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-5xl mx-auto px-4 pb-16">
+        <h2 class="text-2xl font-bold text-space-blue-light mb-6">Featured Research</h2>
+        <div class="bg-space-blue-dark/40 rounded-xl p-6 border border-space-blue-light/10 flex flex-col md:flex-row items-center gap-6">
+          <img src="/images/gallery/magnetar_flare_CU.gif" alt="Magnetar Flare" class="w-40 h-40 object-cover rounded-lg shadow-lg mb-4 md:mb-0" />
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">Magnetars & X-ray Astronomy</h3>
+            <p class="text-[#F8F9FA]/90 mb-2">I study the most magnetic objects in the universe—magnetars—using X-ray observations to understand their extreme physics and cosmic role.</p>
+            <a href="/research" class="text-space-orange hover:underline font-semibold">Learn more &rarr;</a>
+          </div>
+        </div>
+      </section>
     </main>
     <Footer />
   </div>
