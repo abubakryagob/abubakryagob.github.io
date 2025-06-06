@@ -1,0 +1,214 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StarBackground from '../components/StarBackground.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "About Me | Abubakr Ibrahim";
+const description = "Learn more about Abubakr Ibrahim, an astrophysicist specializing in magnetars and X-ray astronomy.";
+
+// Gallery images with captions
+const galleryImages = [
+  {
+    src: "/images/gallery/magnetar_flare_CU.gif",
+    alt: "Magnetar Flare Animation",
+    caption: "Visualization of a magnetar flare",
+    span: "col-span-2"
+  },
+  {
+    src: "/images/gallery/Artist_impression_active-magnetar-Swift-J1818.0-1607_magnetic_fields.jpg",
+    alt: "Artist's impression of Swift J1818.0-1607",
+    caption: "Artist's impression of magnetar Swift J1818.0-1607"
+  },
+  {
+    src: "/images/gallery/phd_defense.jpg",
+    alt: "PhD Defense",
+    caption: "My PhD Defense"
+  },
+  {
+    src: "/images/gallery/master_graduation.jpeg",
+    alt: "Master's Graduation",
+    caption: "Master's Graduation Ceremony"
+  },
+  {
+    src: "/images/gallery/NANDA_REA_ICE-10.jpg",
+    alt: "Research Group Photo",
+    caption: "With Prof. Nanda Rea at ICE-10 Conference"
+  },
+  {
+    src: "/images/gallery/magnetar_swiftJ1818_Credits_ESA.jpg",
+    alt: "Swift J1818.0-1607",
+    caption: "ESA's visualization of magnetar Swift J1818.0-1607"
+  },
+  {
+    src: "/images/gallery/SGRJ1935+2154.jpg",
+    alt: "SGR J1935+2154",
+    caption: "Visualization of SGR J1935+2154"
+  },
+  {
+    src: "/images/gallery/PSX_20221110_014301.jpeg",
+    alt: "Research Activity",
+    caption: "During a research activity"
+  }
+];
+---
+
+<Layout title={title} description={description}>
+  <div class="flex flex-col min-h-screen">
+    <Navigation />
+    <div class="relative flex-1 overflow-y-auto snap-y snap-mandatory">
+      <StarBackground />
+      <div class="container mx-auto px-4 py-16 relative z-10">
+        <div class="max-w-4xl mx-auto space-y-0 snap-mandatory snap-y">
+        <!-- Profile Section -->
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always">
+          <div class="w-48 h-48 md:w-64 md:h-64 relative">
+            <img
+              src="/images/gallery/galaxy.jpeg"
+              alt="Abubakr Ibrahim"
+              class="rounded-2xl object-cover w-full h-full shadow-xl border-2 border-[#8ecae6]/30"
+            />
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#023047]/50 to-transparent"></div>
+          </div>
+          
+          <div class="flex-1 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-[#FFFFFF]">Abubakr Ibrahim</h1>
+            <p class="text-xl md:text-2xl text-[#8ecae6] mb-6">Astrophysicist & Researcher</p>
+            <div class="space-y-4 text-lg text-[#F8F9FA]/90">
+              <p>🎓 Postdoctoral Researcher at Institute of Space Sciences (ICE-CSIC)</p>
+              <p>🔭 Specializing in Magnetars & X-ray Astronomy</p>
+              <p>📍 Based in Barcelona, Spain</p>
+            </div>
+            <div class="mt-8">
+              <a
+                href="/images/gallery/Abubakr_Ibrahim_CV.pdf"
+                target="_blank"
+                class="inline-flex items-center px-6 py-3 rounded-full bg-[#fb8500] hover:bg-[#fb8500]/90 text-white font-semibold transition-colors duration-200"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <line x1="10" y1="9" x2="8" y2="9"></line>
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biography Section -->
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Biography</h2>
+          <div class="space-y-4 text-[#F8F9FA]/90 text-base md:text-lg leading-relaxed">
+            <p>
+              [Your detailed biography paragraph 1]
+            </p>
+            <p>
+              [Your detailed biography paragraph 2]
+            </p>
+            <p>
+              [Your research interests and current work]
+            </p>
+          </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Education</h2>
+          <div class="space-y-8">
+            <!-- Replace with your education history -->
+            <div class="flex flex-col md:flex-row gap-4 items-start">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-[#FFFFFF]">Ph.D. in Astrophysics</h3>
+                <p class="text-[#8ecae6]">[University Name]</p>
+                <p class="text-[#F8F9FA]/80">Thesis: "[Your Thesis Title]"</p>
+              </div>
+              <div class="text-space-orange font-medium">20XX - 20XX</div>
+            </div>
+            <!-- Add more education entries as needed -->
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Skills & Expertise</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4 text-[#FFFFFF]">Research Areas</h3>
+              <ul class="list-disc list-inside space-y-2 text-[#F8F9FA]/90">
+                <!-- Replace with your research areas -->
+                <li>Magnetar Physics</li>
+                <li>X-ray Astronomy</li>
+                <li>Stellar Evolution</li>
+                <!-- Add more -->
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4 text-[#FFFFFF]">Technical Skills</h3>
+              <ul class="list-disc list-inside space-y-2 text-[#F8F9FA]/90">
+                <!-- Replace with your technical skills -->
+                <li>Data Analysis</li>
+                <li>Programming (Python, etc.)</li>
+                <li>Telescope Operations</li>
+                <!-- Add more -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo Gallery Section -->
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Gallery</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <div key={index} class={`relative group overflow-hidden ${image.span || ''} bg-[#023047]/20 rounded-lg h-64`}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  loading={index < 6 ? "eager" : "lazy"}
+                  decoding="async"
+                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement.classList.add('error');
+                  }}
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#023047]/80 via-[#023047]/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg flex items-end">
+                  <p class="text-[#FFFFFF] p-4 text-sm md:text-base font-medium backdrop-blur-sm bg-[#023047]/30 w-full rounded-b-lg">{image.caption}</p>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center text-[#F8F9FA]/50 bg-[#023047]/50 error:flex hidden">
+                  <p class="text-sm bg-[#fb8500]/20 px-4 py-2 rounded-lg">Image not available</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </div>
+</Layout>
+
+<script>
+  // Handle image loading
+  document.addEventListener('astro:page-load', () => {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      // Show loading state
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.3s ease-in';
+      
+      // Handle successful load
+      img.onload = () => {
+        img.style.opacity = '1';
+      };
+
+      // If image is already loaded (from cache)
+      if (img.complete) {
+        img.style.opacity = '1';
+      }
+    });
+  });
+</script>

@@ -159,6 +159,28 @@ const {
 		backdrop-filter: blur(10px);
 		border: 1px solid rgba(255, 255, 255, 0.1);
 	}
+
+	/* Gallery Image Styles */
+	.gallery-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.gallery-image:hover {
+		transform: scale(1.05);
+	}
+
+	/* Image Loading States */
+	img {
+		opacity: 0;
+		transition: opacity 0.3s ease-in;
+	}
+
+	img.loaded {
+		opacity: 1;
+	}
 </style>
 
 <script>
@@ -175,4 +197,13 @@ const {
 	});
 
 	sections.forEach(section => observer.observe(section));
+
+	// Image loading handler
+	document.addEventListener('astro:page-load', () => {
+		const images = document.querySelectorAll('img');
+		images.forEach(img => {
+			img.onload = () => img.classList.add('loaded');
+			if (img.complete) img.classList.add('loaded');
+		});
+	});
 </script>

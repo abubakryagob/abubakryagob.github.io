@@ -1,0 +1,316 @@
+{
+  "global": {
+    "fontFamily": "'Inter', sans-serif",
+    "baseFontSize": "16px",
+    "bodyBackgroundColor": "#FFFFFF",
+    "bodyTextColor": "#023047",
+    "bodyPaddingBottom": "150px (initial, JS updated for fixed bottom bar)",
+    "pageContainer": {
+      "maxWidth": "Tailwind 'container' class (varies by breakpoint, e.g., sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px)",
+      "horizontalPadding": "1.5rem (px-6)"
+    },
+    "sectionDefaults": {
+      "verticalPadding": "4rem to 6rem (py-16 md:py-24)",
+      "textAlignment": "varies by section (often text-center for titles)"
+    }
+  },
+  "colorPalette": {
+    "variables": {
+      "lightBlue": "#8ecae6",
+      "mediumBlue": "#219ebc",
+      "darkBlue": "#023047",
+      "accentYellow": "#ffb703",
+      "accentOrange": "#fb8500",
+      "white": "#FFFFFF",
+      "offWhite": "#F8F9FA",
+      "darkGray": "#495057"
+    },
+    "semanticUsage": {
+      "primary": "var(--medium-blue)",
+      "secondary": "var(--light-blue)",
+      "accent": "var(--accent-yellow)",
+      "accentSecondary": "var(--accent-orange)",
+      "backgroundPage": "var(--white)",
+      "backgroundSectionLight": "var(--off-white)",
+      "backgroundSectionDark": "var(--dark-blue)",
+      "textPrimary": "var(--dark-blue)",
+      "textSecondary": "var(--dark-gray)",
+      "textOnDark": "var(--white)",
+      "textOnDarkMuted": "rgb(203 213 225 / 1)",
+      "textOnPrimaryButton": "var(--white)",
+      "textOnAccentButton": "var(--dark-blue)"
+    }
+  },
+  "typography": {
+    "base": {
+      "fontFamily": "'Inter', sans-serif",
+      "color": "var(--textPrimary)"
+    },
+    "headings": {
+      "h1_hero": {
+        "size": "2.25rem (text-4xl) to 3.75rem (md:text-6xl)",
+        "fontWeight": "700 (font-bold)",
+        "color": "var(--textOnDark)"
+      },
+      "h1_titles": {
+        "size": "1.5rem (text-2xl) to 1.875rem (md:text-3xl)",
+        "fontWeight": "700 (font-bold)",
+        "color": "var(--textOnDark)"
+      },
+      "h2_section": {
+        "size": "1.875rem (text-3xl) to 2.25rem (md:text-4xl)",
+        "fontWeight": "700 (font-bold)",
+        "color": "var(--textPrimary)"
+      },
+      "h2_home_subsection": {
+        "size": "1.5rem (text-2xl) to 1.875rem (md:text-3xl)",
+        "fontWeight": "700 (font-bold)",
+        "color": "var(--textPrimary)"
+      },
+      "h3_card_title": {
+        "size": "1.25rem (text-xl)",
+        "fontWeight": "600 (font-semibold)",
+        "color": "var(--textPrimary)"
+      },
+      "h4_award_title": {
+        "size": "1.125rem (text-lg)",
+        "fontWeight": "500 (font-medium)",
+        "color": "var(--textPrimary)"
+      }
+    },
+    "paragraph": {
+      "default": {
+        "size": "1rem (text-base)",
+        "color": "var(--textSecondary)",
+        "lineHeight": "1.625 (leading-relaxed)"
+      },
+      "onDark": {
+        "size": "1.125rem (text-lg) to 1.25rem (md:text-xl)",
+        "color": "var(--textOnDarkMuted)",
+        "lineHeight": "1.75 (leading-relaxed)"
+      }
+    },
+    "links": {
+      "navigation": {
+        "color": "var(--dark-gray)",
+        "hoverColor": "var(--primary)",
+        "activeColor": "var(--primary)",
+        "activeFontWeight": "600"
+      },
+      "inlineText": {
+        "color": "var(--primary)",
+        "hoverColor": "var(--dark-blue)",
+        "fontWeight": "600 (font-semibold)"
+      }
+    }
+  },
+  "components": {
+    "navigationBar": {
+      "position": "sticky-top",
+      "zIndex": "50",
+      "backgroundColor": "rgba(255, 255, 255, 0.8)",
+      "backdropBlur": "md",
+      "heightPadding": "0.75rem (py-3)",
+      "shadow": "shadow-sm (scroll: shadow-md)",
+      "brand": {
+        "fontSize": "1.5rem (text-2xl)",
+        "fontWeight": "700 (font-bold)",
+        "color": "var(--textPrimary)"
+      },
+      "desktopLinks": {
+        "spacing": "1.5rem (space-x-6)"
+      },
+      "mobileMenu": {
+        "triggerIcon": "SVG hamburger (w-6 h-6)",
+        "panelBackgroundColor": "var(--off-white)",
+        "panelWidth": "16rem (w-64)",
+        "position": "fixed-right",
+        "itemFontSize": "1.125rem (text-lg)"
+      }
+    },
+    "fixedBottomBar": {
+      "position": "fixed-bottom",
+      "zIndex": "100",
+      "backgroundColor": "var(--dark-blue)",
+      "textColor": "var(--off-white)",
+      "padding": "1rem",
+      "fontSize": "0.875rem",
+      "shadow": "0 -2px 10px rgba(0,0,0,0.2)",
+      "photo": {
+        "size": "80px",
+        "borderRadius": "50%",
+        "backgroundColor": "var(--light-blue)"
+      },
+      "links": {
+        "hoverColor": "var(--light-blue)"
+      },
+      "socialMedia": [
+        {
+          "platform": "LinkedIn",
+          "urlPlaceholder": "https://linkedin.com/in/yourprofile",
+          "iconPlaceholder": "LinkedIn SVG or Font Icon Class",
+          "hoverColor": "var(--light-blue)"
+        },
+        {
+          "platform": "X",
+          "urlPlaceholder": "https://x.com/yourprofile",
+          "iconPlaceholder": "X SVG or Font Icon Class",
+          "hoverColor": "var(--light-blue)"
+        },
+        {
+          "platform": "Facebook",
+          "urlPlaceholder": "https://facebook.com/yourprofile",
+          "iconPlaceholder": "Facebook SVG or Font Icon Class",
+          "hoverColor": "var(--light-blue)"
+        },
+        {
+          "platform": "YouTube",
+          "urlPlaceholder": "https://youtube.com/yourchannel",
+          "iconPlaceholder": "YouTube SVG or Font Icon Class",
+          "hoverColor": "var(--light-blue)"
+        }
+      ]
+    },
+    "heroParts": {
+      "part1_visualIntro": {
+        "minHeight": "70vh (md:80vh)",
+        "background": "animated-gradient (var(--dark-blue), var(--medium-blue), #011f2e, #1a5f75)",
+        "textColor": "var(--textOnDark)",
+        "photoPlaceholder": {
+          "size": "w-full h-80 md:h-96",
+          "backgroundColor": "rgba(var(--rgb-light-blue), 0.3)",
+          "backdropBlur": "sm",
+          "borderRadius": "rounded-lg"
+        },
+        "textBlock": {
+          "backgroundColor": "rgba(0,0,0,0.3)",
+          "padding": "0.5rem 1rem",
+          "borderRadius": "0.25rem"
+        }
+      },
+      "part2_aboutSnippet": {
+        "minHeight": "50vh",
+        "background": "animated-gradient (var(--dark-blue), var(--medium-blue), #011f2e, #1a5f75)",
+        "textColor": "var(--textOnDark)",
+        "textBlock": {
+          "backgroundColor": "rgba(0,0,0,0.3)",
+          "padding": "0.5rem 1rem",
+          "borderRadius": "0.25rem"
+        }
+      },
+      "part3_discoverCards": {
+        "sectionBackgroundColor": "var(--off-white)",
+        "cardBackgroundColor": "var(--white)",
+        "cardPadding": "1.5rem (p-6)",
+        "cardBorderRadius": "rounded-lg",
+        "cardShadow": "shadow-md (hover:shadow-xl)"
+      },
+      "part4_awardsCards": {
+        "sectionBackgroundColor": "var(--white)",
+        "cardBackgroundColor": "var(--off-white)",
+        "cardPadding": "1rem (p-4)",
+        "cardBorderRadius": "rounded-lg",
+        "cardShadow": "shadow-sm"
+      }
+    },
+    "contentCards": {
+      "blogUpdates": {
+        "backgroundColor": "var(--off-white)",
+        "borderRadius": "rounded-lg",
+        "shadow": "shadow-md (hover:shadow-xl)",
+        "padding": "1.5rem (p-6)",
+        "imageContainer": "Not present in current design, but typical card component",
+        "metadataTextColor": "var(--textSecondary)",
+        "readMoreLinkStyle": "font-semibold text-primary hover:text-dark"
+      },
+      "publicationItems": {
+        "backgroundColor": "var(--off-white)",
+        "borderRadius": "rounded-lg",
+        "shadow": "shadow-sm",
+        "padding": "1.5rem (p-6)",
+        "textStyle": "font-semibold text-dark"
+      }
+    },
+    "buttons": {
+      "primaryCTA_Contact": {
+        "backgroundColor": "var(--primary)",
+        "textColor": "var(--textOnPrimaryButton)",
+        "padding": "0.75rem 2rem (py-3 px-8)",
+        "borderRadius": "rounded-md",
+        "fontWeight": "700 (font-bold)",
+        "hoverBackgroundColor": "var(--dark-blue)",
+        "borderColor": "var(--primary)"
+      },
+      "accentCTA_CV": {
+        "backgroundColor": "var(--accent)",
+        "textColor": "var(--textOnAccentButton)",
+        "padding": "0.75rem 2rem (py-3 px-8)",
+        "borderRadius": "rounded-md",
+        "fontWeight": "700 (font-bold)",
+        "hoverBackgroundColor": "var(--accent-orange)"
+      }
+    },
+    "forms": {
+      "contactFormInput": {
+        "backgroundColor": "rgba(var(--rgb-equivalent-gray-800-from-dark-blue), 0.5)",
+        "borderColor": "var(--equivalent-slate-600)",
+        "textColor": "var(--white)",
+        "borderRadius": "rounded-md",
+        "padding": "0.75rem (p-3)",
+        "focusRingColor": "var(--accent)"
+      }
+    },
+    "charts": {
+      "researchChartContainer": {
+        "maxWidth": "450px",
+        "height": "300px (md:350px)",
+        "backgroundColorDoughnutSegments": [
+          "rgba(2, 48, 71, 0.8)",
+          "rgba(33, 158, 188, 0.8)",
+          "rgba(142, 202, 230, 0.8)"
+        ],
+        "legendTextColor": "var(--textPrimary)"
+      }
+    }
+  },
+  "responsiveBehavior": {
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px"
+    },
+    "navigationCollapseBreakpoint": "lg",
+    "gridColumns": {
+      "homeDiscoverCards": "md:grid-cols-3",
+      "homeAwardsCards": "sm:grid-cols-2 lg:grid-cols-4",
+      "blogCards": "sm:grid-cols-2 lg:grid-cols-3",
+      "aboutSectionLayout": "md:grid-cols-5",
+      "researchSectionLayout": "md:grid-cols-2",
+      "contactFormFields": "sm:grid-cols-2"
+    },
+    "fixedBottomBar": {
+      "mobileFlexDirection": "column",
+      "mobileTextAlign": "center",
+      "mobilePhotoMarginTop": "0.5rem"
+    }
+  },
+  "stylingUtilities": {
+    "borderRadius": {
+      "sm": "0.125rem (rounded-sm)",
+      "md": "0.375rem (rounded-md)",
+      "lg": "0.5rem (rounded-lg)",
+      "xl": "0.75rem (rounded-xl)",
+      "full": "9999px (rounded-full)"
+    },
+    "boxShadows": {
+      "sm": "Tailwind 'shadow-sm'",
+      "md": "Tailwind 'shadow-md'",
+      "lg": "Tailwind 'shadow-lg'",
+      "xl": "Tailwind 'shadow-xl'"
+    },
+    "transitions": {
+      "default": "duration-300 (for colors, shadow)"
+    }
+  }
+}
