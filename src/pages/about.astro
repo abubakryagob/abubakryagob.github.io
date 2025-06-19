@@ -64,7 +64,7 @@ const galleryImages = [
         <div class="flex flex-col md:flex-row items-center md:items-start gap-8 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always">
           <div class="w-48 h-48 md:w-64 md:h-64 relative">
             <img
-              src="/images/gallery/galaxy.jpeg"
+              src="/images/gallery/Abubakr_profile+photo.jpg"
               alt="Abubakr Ibrahim"
               class="rounded-2xl object-cover w-full h-full shadow-xl border-2 border-[#8ecae6]/30"
             />
@@ -170,10 +170,6 @@ const galleryImages = [
                   loading={index < 6 ? "eager" : "lazy"}
                   decoding="async"
                   class="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement.classList.add('error');
-                  }}
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-[#023047]/80 via-[#023047]/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg flex items-end">
                   <p class="text-[#FFFFFF] p-4 text-sm md:text-base font-medium backdrop-blur-sm bg-[#023047]/30 w-full rounded-b-lg">{image.caption}</p>
@@ -190,25 +186,3 @@ const galleryImages = [
     <Footer />
   </div>
 </Layout>
-
-<script>
-  // Handle image loading
-  document.addEventListener('astro:page-load', () => {
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-      // Show loading state
-      img.style.opacity = '0';
-      img.style.transition = 'opacity 0.3s ease-in';
-      
-      // Handle successful load
-      img.onload = () => {
-        img.style.opacity = '1';
-      };
-
-      // If image is already loaded (from cache)
-      if (img.complete) {
-        img.style.opacity = '1';
-      }
-    });
-  });
-</script>

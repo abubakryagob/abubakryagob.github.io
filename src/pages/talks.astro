@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import TalksSection from '../components/TalksSection.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Talks | Abubakr Ibrahim";
+const description = "Talks and presentations by Abubakr Ibrahim.";
+---
+
+<Layout title={title} description={description}>
+  <div class="flex flex-col min-h-screen">
+    <Navigation />
+    <main class="flex-grow">
+      <TalksSection />
+    </main>
+    <Footer />
+  </div>
+</Layout>

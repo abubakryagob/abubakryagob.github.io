@@ -2,13 +2,13 @@
 const navItems = [
   { href: "/", text: "Home" },
   { href: "/about", text: "About" },
-  { href: "/#research", text: "Research" },
-  { href: "/#publications", text: "Publications" },
-  { href: "/#cv", text: "CV" },
-  { href: "/#talks", text: "Talks" },
-  { href: "/#outreach", text: "Outreach" },
-  { href: "/#blog", text: "Blog" },
-  { href: "/#contact", text: "Contact" }
+  { href: "/research", text: "Research" },
+  { href: "/publications", text: "Publications" },
+  { href: "/cv", text: "CV" },
+  { href: "/talks", text: "Talks" },
+  { href: "/outreach", text: "Outreach" },
+  { href: "/blog", text: "Blog" },
+  { href: "/contact", text: "Contact" }
 ];
 ---
 
@@ -25,6 +25,7 @@ const navItems = [
               <a
                 href={href}
                 class="text-gray-300 hover:text-space-blue-light px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                @click.prevent="$root.section = href.replace('/#','').replace('/','home')"
               >
                 {text}
               </a>

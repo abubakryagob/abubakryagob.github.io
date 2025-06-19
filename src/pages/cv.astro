@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import CVSection from '../components/CVSection.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "CV | Abubakr Ibrahim";
+const description = "Curriculum Vitae of Abubakr Ibrahim.";
+---
+
+<Layout title={title} description={description}>
+  <div class="flex flex-col min-h-screen">
+    <Navigation />
+    <main class="flex-grow">
+      <CVSection />
+    </main>
+    <Footer />
+  </div>
+</Layout>

@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import ContactSection from '../components/ContactSection.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Contact | Abubakr Ibrahim";
+const description = "Contact Abubakr Ibrahim.";
+---
+
+<Layout title={title} description={description}>
+  <div class="flex flex-col min-h-screen">
+    <Navigation />
+    <main class="flex-grow">
+      <ContactSection />
+    </main>
+    <Footer />
+  </div>
+</Layout>

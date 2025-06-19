@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import ResearchSection from '../components/ResearchSection.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Research | Abubakr Ibrahim";
+const description = "Research by Abubakr Ibrahim.";
+---
+
+<Layout title={title} description={description}>
+  <div class="flex flex-col min-h-screen">
+    <Navigation />
+    <main class="flex-grow">
+      <ResearchSection />
+    </main>
+    <Footer />
+  </div>
+</Layout>

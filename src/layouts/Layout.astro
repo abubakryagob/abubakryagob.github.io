@@ -26,8 +26,9 @@ const {
 		<meta name="twitter:card" content="summary_large_image" />
 		<title>{title}</title>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" rel="preload" as="script">
 	</head>
-	<body class="bg-gradient-to-b from-space-blue-dark to-black">
+	<body class="bg-gradient-to-b from-space-blue-dark to-black" x-data="{ section: 'home' }">
 		<slot />
 	</body>
 </html>
@@ -173,14 +174,6 @@ const {
 	}
 
 	/* Image Loading States */
-	img {
-		opacity: 0;
-		transition: opacity 0.3s ease-in;
-	}
-
-	img.loaded {
-		opacity: 1;
-	}
 </style>
 
 <script>

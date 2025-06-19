@@ -1,0 +1,107 @@
+---
+// Talks data
+const talks = [
+  {
+    title: "The X-ray Mysteries of Neutron Stars and White Dwarfs",
+    date: "June 2024",
+    event: "ESAC, Oral presentation, Madrid, Spain",
+    images: ["/images/gallery/group_photo_WD_conf.jpeg", "/images/gallery/wd_madrid_conf.jpeg"]
+  },
+  {
+    title: "XMM-Newton survey legacy for Athena and beyond workshop",
+    date: "26-30 Feb 2024",
+    event: "Toulouse, France"
+  },
+  {
+    title: "The Scientific Communication in Astronomy School – 2nd edition",
+    date: "1-6 October 2023",
+    event: "Bologna, Italy",
+    images: ["/images/gallery/GroupPhoto_bologna.JPG"]
+  },
+  {
+    title: "The X-Ray Universe 2023 Conference, Oral presentation",
+    date: "June 2023",
+    event: "Greece, Athens",
+    images: ["/images/gallery/XrayUniverse2023_GroupPhoto_athena.jpg"]
+  },
+  {
+    title: "The Transient Universe 2023 school",
+    date: "May 2023",
+    event: "Cargese, France",
+    images: ["/images/gallery/transientuniverse_june2023_corseca.jpeg"]
+  },
+  {
+    title: "Exploring the Hot and Energetic Universe: the third scientific conference dedicated to the Athena X-ray Observatory",
+    date: "Nov 2022",
+    event: "Barcelona, Spain",
+    images: ["/images/gallery/confrense_cosmo_xisa.jpg"]
+  },
+  {
+    title: "EAS2022 annual meeting",
+    date: "July 2022",
+    event: "Valencia, Spain"
+  },
+  {
+    title: "PHAROS 2022",
+    date: "May 2022",
+    event: "University La Sapienza, Rome, Italy"
+  },
+  {
+    title: "IPTA 2021 Science Week & School/Workshop",
+    date: "June 2021"
+  },
+  {
+    title: "European Astronomical Society Annual Meeting",
+    date: "May 2021"
+  },
+  {
+    title: "SKA Science Conference (A precursor view of the SKA Sky)",
+    date: "March 2021"
+  },
+  {
+    title: "2018 Postgraduate Bursary Conference.",
+    date: "Nov 2018"
+  },
+  {
+    title: "Pulsars and FRBs search software in the era of real-time surveys.",
+    date: "Dec 2017",
+    event: "South African Astronomical Observatory, Cape Town, South Africa."
+  },
+  {
+    title: "South African Radio Astronomy Observatory. Poster presentation",
+    date: "Dec 2017",
+    event: "Cape Town, South Africa."
+  },
+  {
+    title: "Postgraduate Pulsar Workshop, CSIRO - SKA SA. Remote observing session of pulsars with PARKES telescope.",
+    date: "24 Aug 2017",
+    event: "Hosted at the SKA SA offices, Cape Town, South Africa."
+  }
+];
+---
+
+<section id="talks" class="py-20 bg-gradient-to-b from-space-blue-dark/30 to-transparent">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+      Talks, Conferences & Workshops
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      {talks.map(talk => (
+        <div class="bg-space-blue-dark/40 backdrop-blur-sm rounded-xl p-6 border border-space-blue-light/10 hover:border-space-blue-light/30 transition-all duration-300">
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold text-white mb-1">{talk.title}</h3>
+            <div class="text-space-orange text-sm font-semibold mb-1">{talk.date}</div>
+            {talk.event && <div class="text-space-blue-light text-sm mb-2">{talk.event}</div>}
+          </div>
+          {talk.images && talk.images.length > 0 && (
+            <div class="flex gap-2 mb-2">
+              {talk.images.map(img => (
+                <img src={img} alt={talk.title} class="w-28 h-20 object-cover rounded-lg border border-space-blue-light/20 shadow" loading="lazy" />
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
