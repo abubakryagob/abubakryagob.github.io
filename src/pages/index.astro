@@ -21,7 +21,7 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
   <div class="flex flex-col min-h-screen">
     <Navigation />
     <main class="flex-grow">
-      <section class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-24 md:pt-32">
+      <section class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-[8rem] md:pt-[10rem] lg:pt-[12rem]">
         <div class="fixed inset-0 w-full h-full z-0">
           <img src="/images/gallery/galaxy.jpeg" alt="Galaxy background" class="w-full h-full object-cover object-center fixed top-0 left-0 z-0" style="min-height:100vh;" />
           <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80 z-10"></div>
@@ -29,12 +29,16 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
         <div class="relative z-20 flex flex-col items-center justify-center w-full">
           <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 drop-shadow-lg">Abubakr Ibrahim</h1>
           <p class="text-xl md:text-2xl text-space-blue-light mb-4 drop-shadow">Astrophysicist | Magnetar Explorer | Science Communicator</p>
-          <p class="max-w-2xl text-lg text-[#F8F9FA]/90 mb-6 drop-shadow">Welcome! I research the universe's most extreme objects—magnetars and neutron stars—using X-ray astronomy, and share the wonders of science through outreach and education.</p>
+          <p class="max-w-2xl text-lg text-[#F8F9FA]/90 mb-6 drop-shadow">
+            Unraveling the Universe’s Most Magnetic Mysteries<br/>
+            Astrophysicist exploring neutron stars, X-ray flares, and cosmic phenomena<br/>
+            <span class="text-space-orange font-semibold">→ Join me in decoding space through science & storytelling.</span>
+          </p>
           <div class="flex flex-wrap justify-center gap-4 mb-8">
             <a href="/research" class="bg-space-blue-light/10 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-light/20 border border-space-blue-light/30 transition">Research</a>
             <a href="/publications" class="bg-space-orange/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-orange/40 border border-space-orange/30 transition">Publications</a>
             <a href="/outreach" class="bg-space-blue/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue/30 border border-space-blue-light/30 transition">Outreach</a>
-            <a href="/cv" class="bg-space-blue-dark/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-dark/50 border border-space-blue-light/30 transition">CV</a>
+            <a href="/images/gallery/Abubakr_Ibrahim_CV.pdf" target="_blank" class="bg-space-blue-dark/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-dark/50 border border-space-blue-light/30 transition">CV</a>
             <a href="/contact" class="bg-space-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-space-orange-light transition">Contact</a>
           </div>
         </div>
@@ -42,30 +46,53 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
       <section class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
         <div>
           <h2 class="text-2xl font-bold text-space-blue-light mb-4">About Me</h2>
-          <p class="text-[#F8F9FA]/90 mb-4">I am a postdoctoral researcher at the Institute of Space Sciences (ICE-CSIC), specializing in the study of magnetars and X-ray astronomy. My work combines observational data from space telescopes with theoretical modeling to unlock the mysteries of neutron stars with ultra-strong magnetic fields.</p>
+          <p class="text-[#F8F9FA]/90 mb-4">
+            I recently completed my PhD in Astrophysics at the Institute of Space Sciences (ICE-CSIC) and the Autonomous University of Barcelona (UAB), where I studied magnetars—neutron stars with the strongest magnetic fields in the universe—through X-ray and radio observations.<br/><br/>
+            My research combines data from space telescopes like XMM-Newton and NuSTAR with ground–based radio arrays such as ASKAP and VLA to investigate high-energy transient phenomena such as magnetars flaring activities and search for pulsars and transients.<br/><br/>
+            Alongside my academic work, I am deeply committed to science outreach and education. I manage Photon Scientific Centre for Natural Sciences and Metaphysics (Photon SCNSM) and co-lead its initiative, supported by the ICTP’s Physics Without Frontiers (PWF) program, which provides astronomy and physics training for students and researchers affected by the conflict in Sudan. You can learn more about the project at <a href="https://photon-center.my.canva.site" class="text-space-blue-light hover:underline" target="_blank">Photon SCNSM</a>.
+          </p>
           <a href="/about" class="inline-block mt-2 text-space-orange hover:underline font-semibold">Read more &rarr;</a>
         </div>
         <div>
           <h2 class="text-2xl font-bold text-space-blue-light mb-4">Latest News</h2>
-          <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 mb-2">
-            <span class="text-space-orange text-sm font-semibold">June 2025</span>
-            <h3 class="text-lg font-semibold text-white mt-1 mb-1">New Magnetar Paper Published</h3>
-            <p class="text-[#F8F9FA]/80">Our latest research on SGR J1935+2154 is now out in ApJ! <a href="/publications" class="text-space-blue-light hover:underline">See Publications</a></p>
-          </div>
-          <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10">
-            <span class="text-space-orange text-sm font-semibold">May 2025</span>
-            <h3 class="text-lg font-semibold text-white mt-1 mb-1">Outreach Event at Barcelona Schools</h3>
-            <p class="text-[#F8F9FA]/80">Engaged with students about the wonders of astronomy and shared our latest research. <a href="/outreach" class="text-space-blue-light hover:underline">See Outreach</a></p>
+          <div class="space-y-4">
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex items-start gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 min-w-[6.5rem]">October 2024</span>
+              <img src="/images/gallery/ABUBAKR%20IBRAHIM.pdf" alt="PhD Thesis Cover" class="w-20 h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20 mr-4" />
+              <div>
+                <h3 class="text-lg font-semibold text-white mt-1 mb-1">PhD Defense Completed</h3>
+                <p class="text-[#F8F9FA]/80">Successfully defended my thesis on magnetars and X-ray astronomy at ICE-CSIC / UAB.<br/>
+                  <a href="https://tesisenred.net/bitstream/handle/10803/693188/aai1de1.pdf?sequence=1&isAllowed=y" target="_blank" class="text-space-blue-light hover:underline font-semibold">Read thesis online</a>
+                </p>
+              </div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex items-start gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 min-w-[6.5rem]">2024 April 9</span>
+              <div>
+                <h3 class="text-lg font-semibold text-white mt-1 mb-1">New Magnetar Paper Published</h3>
+                <p class="text-[#F8F9FA]/80">Our latest research on SGR J1935+2154 is now out in ApJ! <a href="/publications" class="text-space-blue-light hover:underline">See Publications</a></p>
+              </div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex items-start gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 min-w-[6.5rem]">June 2025</span>
+              <img src="/images/gallery/PWF_SUDAN_FinalPoster.jpg" alt="ICTP Physics Without Frontiers – Sudan Poster" class="w-20 h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20 mr-4" />
+              <div>
+                <h3 class="text-lg font-semibold text-white mt-1 mb-1">ICTP Physics Without Frontiers – Sudan</h3>
+                <p class="text-[#F8F9FA]/80">Co-leading a six-week international initiative empowering Sudanese students and researchers through advanced online seminars in physics and astronomy.<br/>
+                  <a href="https://indico.ictp.it/event/11030/overview" target="_blank" class="text-space-blue-light hover:underline font-semibold">Initiative Webpage</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="max-w-5xl mx-auto px-4 pb-16">
         <h2 class="text-2xl font-bold text-space-blue-light mb-6">Featured Research</h2>
-        <div class="bg-space-blue-dark/40 rounded-xl p-6 border border-space-blue-light/10 flex flex-col md:flex-row items-center gap-6">
-          <img src="/images/gallery/magnetar_flare_CU.gif" alt="Magnetar Flare" class="w-40 h-40 object-cover rounded-lg shadow-lg mb-4 md:mb-0" />
-          <div>
+        <div class="bg-space-blue-dark/40 rounded-xl p-6 border border-space-blue-light/10 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <img src="/images/gallery/magnetar_flare_CU.gif" alt="Magnetar Flare" class="w-64 h-64 object-cover rounded-lg shadow-lg mb-4 md:mb-0 flex-shrink-0" />
+          <div class="md:ml-8 w-full">
             <h3 class="text-xl font-semibold text-white mb-2">Magnetars & X-ray Astronomy</h3>
-            <p class="text-[#F8F9FA]/90 mb-2">I study the most magnetic objects in the universe—magnetars—using X-ray observations to understand their extreme physics and cosmic role.</p>
+            <p class="text-[#F8F9FA]/90 mb-2">Using data from XMM-Newton, NuSTAR, and INTEGRAL, I investigate the galactic magnetar, SGR J1935+2154, outbursts & burst and their evolution.</p>
             <a href="/research" class="text-space-orange hover:underline font-semibold">Learn more &rarr;</a>
           </div>
         </div>
