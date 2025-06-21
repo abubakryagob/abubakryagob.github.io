@@ -10,11 +10,9 @@ const navItems = [
   { href: "/blog", text: "Blog" },
   { href: "/contact", text: "Contact" }
 ];
-
-const isHome = Astro.url.pathname === "/";
 ---
 
-<nav class={`fixed top-0 w-full z-50 border-b border-space-blue-light/10 transition-colors duration-300 ${isHome ? 'bg-transparent' : 'bg-space-blue-dark/80 backdrop-blur-md'}`}>
+<nav class="fixed top-0 w-full bg-space-blue-dark/80 backdrop-blur-md z-50 border-b border-space-blue-light/10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex items-center">
@@ -27,6 +25,7 @@ const isHome = Astro.url.pathname === "/";
               <a
                 href={href}
                 class="text-gray-300 hover:text-space-blue-light px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                @click.prevent="$root.section = href.replace('/#','').replace('/','home')"
               >
                 {text}
               </a>
