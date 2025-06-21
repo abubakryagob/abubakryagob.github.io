@@ -3,10 +3,9 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   output: 'static',
+  build: {
+    outDir: 'docs',
+  },
   base: '/',
   integrations: [tailwind()],
-  server: {
-    host: '0.0.0.0',
-    port: 3000,
-  },
 });
