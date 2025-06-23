@@ -74,10 +74,10 @@ const galleryImages = [
           <div class="flex-1 text-center md:text-left">
             <h1 class="text-4xl md:text-6xl font-bold mb-4 text-[#FFFFFF]">Abubakr Ibrahim</h1>
             <p class="text-xl md:text-2xl text-[#8ecae6] mb-6">Astrophysicist & Researcher</p>
-            <div class="space-y-4 text-lg text-[#F8F9FA]/90">
-              <p>🎓 Postdoctoral Researcher at Institute of Space Sciences (ICE-CSIC)</p>
-              <p>🔭 Specializing in Magnetars & X-ray Astronomy</p>
-              <p>📍 Based in Barcelona, Spain</p>
+            <div class="space-y-2 text-lg text-[#F8F9FA]/90 mb-6">
+              <div>📚 Ph.D. in Astrophysics – ICE-CSIC & UAB</div>
+              <div>🔭 Focused on Magnetars, Neutron Stars & High-Energy Astrophysics</div>
+              <div>📍 Based in Barcelona, Spain</div>
             </div>
             <div class="mt-8">
               <a
@@ -98,68 +98,111 @@ const galleryImages = [
           </div>
         </div>
 
+        <!-- Custom Quote Section -->
+        <div class="flex justify-center mt-4 mb-8">
+          <blockquote class="max-w-2xl text-center text-xl md:text-2xl italic text-[#8ecae6] border-l-4 border-[#fb8500] pl-6 py-4 bg-[#023047]/60 rounded-xl shadow-lg">
+            “It was under Sudan’s dark skies that I first wondered what lay beyond. That question has never left me.”
+          </blockquote>
+        </div>
+
         <!-- Biography Section -->
-        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto mt-8">
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Biography</h2>
           <div class="space-y-4 text-[#F8F9FA]/90 text-base md:text-lg leading-relaxed">
+            <h3 class="text-2xl font-semibold text-[#8ecae6] mb-2">About Abubakr</h3>
             <p>
-              [Your detailed biography paragraph 1]
+              Born and raised under the vast skies of a sugar-cane town called Kenana in Sudan, my early years were filled with stars and uninterrupted nights that naturally sparked a profound curiosity about the universe beyond our world. This childhood fascination, initially an unnamed wonder, gradually led me into a desire to understand the universe through scientific inquiry.
             </p>
             <p>
-              [Your detailed biography paragraph 2]
+              My academic journey began at Omdurman Islamic University, Sudan, where I pursued a Bachelor of Science in Astronomy and Meteorology. While this laid my foundational knowledge, like many aspiring scientists in Sudan, I encountered significant hurdles: limited research infrastructure and restricted access to international scientific networks. Rather than stopping me, these challenges just lit a fire under me, strengthening my resolve to dive deeper into astrophysics and become part of the global scientific community.
             </p>
             <p>
-              [Your research interests and current work]
+              This determination guided me beyond Sudan. I continued my studies in South Africa, where I earned both my Honours of Science (B.Sc.H) and a Master of Science (M.Sc) in Astrophysics and Space Science from the University of Cape Town. My Master's thesis, "Dispersion measure variations in pulsar observations with LOFAR", marked my first significant engagement with pulsars and low-frequency radio astronomy. My journey then led me to Spain, where I completed my PhD in Astrophysics at the Institute of Space Science (ICE-CSIC) and the Autonomous University of Barcelona (UAB) in October 2024. My doctoral research, "Search for transient events and pulsars in multi-frequency data", sharpened my expertise in studying extreme astrophysical phenomena like magnetars through multi-wavelength observations using space and ground-based telescopes such as XMM-Newton, NuSTAR, ASKAP, and VLA.
+            </p>
+            <p>
+              While my core scientific pursuits lie in unraveling the mysteries of the cosmos, I am equally passionate about making science accessible, particularly to communities facing adversity. I am proud to co-lead the Photon Scientific Centre for Natural Sciences and Metaphysics (Photon SCNSM) in Sudan. This initiative, which I helped establish, aims to support physics and astronomy education for Sudanese students and researchers affected by ongoing conflict in Sudan, helping them keep their scientific dreams alive even when things are incredibly hard. This work truly comes from the heart; it connects me to where I'm from and reminds me of what I hope to give back.
+            </p>
+            <p>
+              I truly believe that science has this incredible power–not just to explain the cosmos, but to bring people together, no matter their borders, languages, or struggles. Through both my research and my outreach efforts, I hope to keep building those vital connections: bridging questions with answers, and linking the distant stars with the hopeful faces looking up at them.
             </p>
           </div>
         </div>
 
         <!-- Education Section -->
-        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto mt-8">
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Education</h2>
           <div class="space-y-8">
-            <!-- Replace with your education history -->
             <div class="flex flex-col md:flex-row gap-4 items-start">
               <div class="flex-1">
-                <h3 class="text-xl font-semibold text-[#FFFFFF]">Ph.D. in Astrophysics</h3>
-                <p class="text-[#8ecae6]">[University Name]</p>
-                <p class="text-[#F8F9FA]/80">Thesis: "[Your Thesis Title]"</p>
+                <h3 class="text-xl font-semibold text-[#FFFFFF]">PhD in Astrophysics</h3>
+                <p class="text-[#8ecae6]">Faculty of Science/ Physics Department, Autonomous University of Barcelona (UAB)/ Institute of Space Sciences (ICE-CSIC), Spain</p>
+                <p class="text-[#F8F9FA]/80">2020 - 2024</p>
+                <p class="text-[#F8F9FA]/80">Thesis title: Search for transient events and pulsars in multi-frequency data</p>
+                <p class="text-[#F8F9FA]/80">Advisors: Prof. Nanda Rea (ICE-CSIC, IEEC), Dr. Francesco Coti Zelati (ICE-CSIC, IEEC)</p>
               </div>
-              <div class="text-space-orange font-medium">20XX - 20XX</div>
+              <div class="text-space-orange font-medium">2020 - 2024</div>
             </div>
-            <!-- Add more education entries as needed -->
+            <div class="flex flex-col md:flex-row gap-4 items-start">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-[#FFFFFF]">Master of Science (M.Sc.), Astrophysics and Space Science (NASSP)</h3>
+                <p class="text-[#8ecae6]">Astronomy Department, University of Cape Town (UCT), South Africa</p>
+                <p class="text-[#F8F9FA]/80">2017 - 2019</p>
+                <p class="text-[#F8F9FA]/80">Thesis title: Dispersion measure variations in pulsar observations with LOFAR</p>
+                <p class="text-[#F8F9FA]/80">Advisors: Dr Maciej Serylak (SARAO) and Dr Shazrene Mohamed (SAAO)</p>
+              </div>
+              <div class="text-space-orange font-medium">2017 - 2019</div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 items-start">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-[#FFFFFF]">Honours of Science (B.Sc.H), Astrophysics and Space Science (NASSP)</h3>
+                <p class="text-[#8ecae6]">Astronomy Department, University of Cape Town (UCT), South Africa</p>
+                <p class="text-[#F8F9FA]/80">Jan - Sep 2016</p>
+                <p class="text-[#F8F9FA]/80">Thesis title: Binary black hole mergers - Gravitational waves and horizon dynamics</p>
+                <p class="text-[#F8F9FA]/80">Advisor: Prof. Denis Pollney, Rhodes University, South Africa.</p>
+              </div>
+              <div class="text-space-orange font-medium">Jan - Sep 2016</div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 items-start">
+              <div class="flex-1">
+                <h3 class="text-xl font-semibold text-[#FFFFFF]">Bachelor of Science (B.Sc.), Astronomy and Meteorology</h3>
+                <p class="text-[#8ecae6]">Department of Astronomy and Meteorology, Omdurman Islamic University (OIU), Sudan</p>
+                <p class="text-[#F8F9FA]/80">2008 - 2012</p>
+                <p class="text-[#F8F9FA]/80">Advisor: Prof. Mohamed Habib Elkanzi, Omdurman Islamic University</p>
+              </div>
+              <div class="text-space-orange font-medium">2008 - 2012</div>
+            </div>
           </div>
         </div>
 
         <!-- Skills Section -->
-        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto mt-8">
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Skills & Expertise</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 class="text-xl font-semibold mb-4 text-[#FFFFFF]">Research Areas</h3>
               <ul class="list-disc list-inside space-y-2 text-[#F8F9FA]/90">
-                <!-- Replace with your research areas -->
                 <li>Magnetar Physics</li>
                 <li>X-ray Astronomy</li>
-                <li>Stellar Evolution</li>
-                <!-- Add more -->
+                <li>Radio Pulsars</li>
+                <li>Transient Astrophysics</li>
+                <li>Compact Objects</li>
               </ul>
             </div>
             <div>
               <h3 class="text-xl font-semibold mb-4 text-[#FFFFFF]">Technical Skills</h3>
               <ul class="list-disc list-inside space-y-2 text-[#F8F9FA]/90">
-                <!-- Replace with your technical skills -->
-                <li>Data Analysis</li>
-                <li>Programming (Python, etc.)</li>
-                <li>Telescope Operations</li>
-                <!-- Add more -->
+                <li>X-ray & Radio Data Reduction (XMM, NuSTAR, SWIFT, INTEGRAL, ASKAP, VLA, LOFAR)</li>
+                <li>Timing & Spectral Analysis</li>
+                <li>Python, Bash, HEASoft, SAS, CASA</li>
+                <li>Git, LaTeX, Markdown</li>
+                <li>Science Outreach & Public Engagement</li>
               </ul>
             </div>
           </div>
         </div>
 
         <!-- Photo Gallery Section -->
-        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacing.16)-64px)] snap-start snap-always overflow-y-auto">
+        <div class="bg-[#023047]/80 backdrop-blur-md p-8 rounded-2xl border border-[#8ecae6]/20 min-h-[calc(100vh-theme(spacer.16)-64px)] snap-start snap-always overflow-y-auto mt-8">
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#FFFFFF]">Gallery</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => (
