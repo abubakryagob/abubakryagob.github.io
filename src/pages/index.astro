@@ -29,31 +29,6 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
         <div class="relative z-20 flex flex-col items-center justify-center w-full">
           <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 drop-shadow-lg">Abubakr Ibrahim</h1>
           <p class="text-xl md:text-2xl text-space-blue-light mb-4 drop-shadow">Astrophysicist | Magnetar Explorer | Science Communicator</p>
-          <div class="flex justify-center mt-4 mb-2">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full 
-                        bg-white/10 backdrop-blur-sm 
-                        border border-white/25
-                        text-white text-sm font-medium
-                        shadow-lg max-w-fit">
-              
-              <!-- Pulsing green dot -->
-              <span class="relative flex h-2.5 w-2.5 shrink-0">
-                <span class="animate-ping absolute inline-flex h-full w-full 
-                             rounded-full bg-green-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2.5 w-2.5 
-                             bg-green-400"></span>
-              </span>
-
-              <!-- Text -->
-              <span>
-                <span class="font-bold text-green-400">Open to opportunities:</span>
-                <span class="text-white/90 ml-1">
-                  Postdoctoral Fellowships in astrophysics &amp; roles in 
-                  Data Science · Space Tech across Europe & Globe
-                </span>
-              </span>
-            </div>
-          </div>
           <p class="max-w-2xl text-lg text-[#F8F9FA]/90 mb-6 drop-shadow">
             Unraveling the Universe’s Most Magnetic Mysteries<br/>
             Astrophysicist exploring neutron stars, X-ray flares, and cosmic phenomena<br/>
@@ -63,7 +38,7 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
             <a href="/research" class="bg-space-blue-light/10 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-light/20 border border-space-blue-light/30 transition">Research</a>
             <a href="/publications" class="bg-space-orange/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-orange/40 border border-space-orange/30 transition">Publications</a>
             <a href="/outreach" class="bg-space-blue/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue/30 border border-space-blue-light/30 transition">Outreach</a>
-            <a href="/images/gallery/Abubakr_Ibrahim_CV.pdf" target="_blank" class="bg-space-blue-dark/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-dark/50 border border-space-blue-light/30 transition">CV</a>
+            <a href="/documents/Abubakr_Ibrahim_CV.pdf" target="_blank" class="bg-space-blue-dark/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-space-blue-dark/50 border border-space-blue-light/30 transition">CV</a>
             <a href="/contact" class="bg-space-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-space-orange-light transition">Contact</a>
           </div>
         </div>
@@ -81,29 +56,54 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
         <div>
           <h2 class="text-2xl font-bold text-space-blue-light mb-4">Latest News</h2>
           <div class="space-y-4">
-            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex items-start gap-6">
-              <span class="text-space-orange text-sm font-semibold mt-1 min-w-[6.5rem]">June 2025</span>
-              <img src="/images/gallery/PWF_SUDAN_FinalPoster.jpg" alt="ICTP Physics Without Frontiers – Sudan Poster" class="w-20 h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20 mr-4" />
-              <div>
+            <div class="bg-gradient-to-r from-space-orange/25 to-space-blue-dark/40 rounded-xl p-4 border border-space-orange/40 flex flex-col sm:flex-row items-start gap-4 sm:gap-6 shadow-lg">
+              <span class="text-space-orange-light text-sm font-semibold mt-1 sm:min-w-[6.5rem]">3 Nov 2026</span>
+              <img src="/images/home/IAU_Abu.jpg" alt="Abubakr Ibrahim presenting at IAU Symposium 409 in Tokyo" class="w-full sm:w-28 h-40 sm:h-28 object-cover rounded-lg shadow-lg border border-space-orange/30" />
+              <div class="min-w-0"><h3 class="text-lg font-semibold text-white mt-1 mb-1">Presented at IAU Symposium 409 in Tokyo</h3><p class="text-[#F8F9FA]/90">I shared how Photon SCNSM, NOC Sudan, and Zool Astro help sustain astronomy and physics education and research during the conflict in Sudan.</p><a href="/talks" class="text-space-blue-light hover:underline font-semibold">View the conference talk →</a></div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/20 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">12 Aug 2026</span>
+              <img src="/images/outreach/solar-eclipse.jpg" alt="Inclusive solar eclipse observation in Reus" class="w-full sm:w-28 h-40 sm:h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20" />
+              <div class="min-w-0"><h3 class="text-lg font-semibold text-white mt-1 mb-1">Inclusive Solar Eclipse Event in Reus</h3><p class="text-[#F8F9FA]/90">Joined the ICE-CSIC organising team for an accessible total solar eclipse observation using sonification and light-sound devices for people with visual disabilities.</p><a href="/outreach" class="text-space-blue-light hover:underline font-semibold">Read about the outreach work →</a></div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">July 2026</span>
+              <img src="/images/home/IAUـMember.png" alt="IAU membership announcement" class="w-full sm:w-28 h-40 sm:h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20" />
+              <div class="min-w-0"><h3 class="text-lg font-semibold text-white mt-1 mb-1">Joined the International Astronomical Union</h3><p class="text-[#F8F9FA]/90">I became a member of the IAU, joining a global community advancing astronomy through research, education, outreach, and international collaboration.</p></div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">July–Aug 2026</span>
+              <img src="/images/gallery/PWFll_Sudan_Final_Poster.jpeg" alt="Expanding Horizons in Physics in Sudan II poster" class="w-full sm:w-28 h-40 sm:h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20" />
+              <div class="min-w-0"><h3 class="text-lg font-semibold text-white mt-1 mb-1">Expanding Horizons in Physics in Sudan II</h3><p class="text-[#F8F9FA]/90">Through Photon SCNSM and ICTP Physics Without Frontiers, I helped deliver an intensive online workshop on Density Functional Theory for Sudanese students and early-career researchers.</p><a href="https://indico.ictp.it/event/11353/" target="_blank" rel="noopener noreferrer" class="text-space-blue-light hover:underline font-semibold">Initiative webpage →</a></div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">June 2026</span>
+              <img src="/images/gallery/rising_newathena.jpeg" alt="NewAthena Rising SWG4 meeting at ICE-CSIC" class="w-full sm:w-28 h-40 sm:h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20" />
+              <div class="min-w-0"><h3 class="text-lg font-semibold text-white mt-1 mb-1">NewAthena Rising: Compact Objects Meeting</h3><p class="text-[#F8F9FA]/90">Attended the Science Working Group 4 meeting at ICE-CSIC in Barcelona, learning about the next X-ray observatory and connecting with the early-career community.</p></div>
+            </div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">June 2025</span>
+              <img src="/images/gallery/PWF_SUDAN_FinalPoster.jpg" alt="ICTP Physics Without Frontiers – Sudan Poster" class="w-20 h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20 sm:mr-2" />
+              <div class="min-w-0">
                 <h3 class="text-lg font-semibold text-white mt-1 mb-1">ICTP Physics Without Frontiers – Sudan</h3>
                 <p class="text-[#F8F9FA]/80">Co-leading a six-week international initiative empowering Sudanese students and researchers through advanced online seminars in physics and astronomy.<br/>
                   <a href="https://indico.ictp.it/event/11030/overview" target="_blank" class="text-space-blue-light hover:underline font-semibold">Initiative Webpage</a>
                 </p>
               </div>
             </div>
-            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex items-start gap-6">
-              <span class="text-space-orange text-sm font-semibold mt-1 min-w-[6.5rem]">October 2024</span>
-              <img src="/images/gallery/Phd_thesis_cover.jpg" alt="PhD Thesis Cover" class="w-20 h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20 mr-4" />
-              <div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">October 2024</span>
+              <img src="/images/gallery/Phd_thesis_cover.jpg" alt="PhD Thesis Cover" class="w-20 h-28 object-cover rounded-lg shadow-lg border border-space-blue-light/20 sm:mr-2" />
+              <div class="min-w-0">
                 <h3 class="text-lg font-semibold text-white mt-1 mb-1">PhD Defense Completed</h3>
                 <p class="text-[#F8F9FA]/80">Successfully defended my thesis on magnetars and X-ray astronomy at ICE-CSIC / UAB.<br/>
                   <a href="https://tesisenred.net/bitstream/handle/10803/693188/aai1de1.pdf?sequence=1&isAllowed=y" target="_blank" class="text-space-blue-light hover:underline font-semibold">Read thesis online</a>
                 </p>
               </div>
             </div>
-            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex items-start gap-6">
-              <span class="text-space-orange text-sm font-semibold mt-1 min-w-[6.5rem]">2024 April 9</span>
-              <div>
+            <div class="bg-space-blue-dark/40 rounded-xl p-4 border border-space-blue-light/10 flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <span class="text-space-orange text-sm font-semibold mt-1 sm:min-w-[6.5rem]">2024 April 9</span>
+              <div class="min-w-0">
                 <h3 class="text-lg font-semibold text-white mt-1 mb-1">New Magnetar Paper Published</h3>
                 <p class="text-[#F8F9FA]/80">Our latest research on SGR J1935+2154 is now out in ApJ! <a href="/publications" class="text-space-blue-light hover:underline">See Publications</a></p>
               </div>
@@ -113,9 +113,9 @@ const description = "Personal website of Abubakr Ibrahim, featuring research in 
       </section>
       <section class="max-w-5xl mx-auto px-4 pb-16">
         <h2 class="text-2xl font-bold text-space-blue-light mb-6">Featured Research</h2>
-        <div class="bg-space-blue-dark/40 rounded-xl p-6 border border-space-blue-light/10 flex flex-col md:flex-row items-center gap-10 md:gap-16">
-          <img src="/images/gallery/magnetar_flare_CU.gif" alt="Magnetar Flare" class="w-64 h-64 object-cover rounded-lg shadow-lg mb-4 md:mb-0 flex-shrink-0" />
-          <div class="md:ml-8 w-full">
+        <div class="bg-space-blue-dark/40 rounded-xl p-6 border border-space-blue-light/10 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+          <img src="/images/gallery/magnetar_flare_CU.gif" alt="Magnetar Flare" class="w-64 max-w-full h-64 object-cover rounded-lg shadow-lg mb-4 md:mb-0 flex-shrink-0" />
+          <div class="md:ml-8 w-full min-w-0">
             <h3 class="text-xl font-semibold text-white mb-2">Magnetars & X-ray Astronomy</h3>
             <p class="text-[#F8F9FA]/90 mb-2">Using data from XMM-Newton, NuSTAR, and INTEGRAL, I investigate the galactic magnetar, SGR J1935+2154, outbursts & burst and their evolution.</p>
             <a href="/research" class="text-space-orange hover:underline font-semibold">Learn more &rarr;</a>

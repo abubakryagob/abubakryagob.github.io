@@ -144,6 +144,23 @@ const {
 		overflow-x: hidden;
 	}
 
+	/* Keep long content and responsive media inside its container on small screens. */
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	main, section, article, div, p, h1, h2, h3, h4, h5, h6 {
+		min-width: 0;
+	}
+
+	p, h1, h2, h3, h4, h5, h6, a, figcaption, td, th {
+		overflow-wrap: anywhere;
+	}
+
+	img, video, svg, iframe {
+		max-width: 100%;
+	}
+
 	/* Animations */
 	@keyframes fadeIn {
 		from { opacity: 0; transform: translateY(20px); }

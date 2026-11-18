@@ -2,6 +2,19 @@
 // Talks data
 const talks = [
   {
+    title: "Innovative Research and Techniques in Astronomy Communication (IAU Symposium 409)",
+    date: "2–6 November 2026",
+    event: "National Astronomical Observatory of Japan (NAOJ), Mitaka, Tokyo, Japan / Online",
+    images: ["/images/gallery/IAUS409.JPG"],
+    slidesPdf: "/documents/talks/IAUS409_Ibrahim_Resilient_astronomy_communication.pdf"
+  },
+  {
+    title: "NewAthena Rising: Science Working Group 4 Meeting on Compact Objects",
+    date: "June 2026",
+    event: "Institute of Space Sciences (ICE-CSIC), Barcelona, Spain",
+    images: ["/images/gallery/rising_newathena.jpeg"]
+  },
+  {
     title: "The X-ray Mysteries of Neutron Stars and White Dwarfs",
     date: "June 2024",
     event: "ESAC, Oral presentation, Madrid, Spain",
@@ -114,9 +127,9 @@ const talks = [
             )}
           </div>
           {talk.images && talk.images.length > 0 && (
-            <div class="flex gap-4 mb-4">
+            <div class="flex flex-wrap gap-4 mb-4">
               {talk.images.map(img => (
-                <img src={img} alt={talk.title} class="w-64 h-48 object-cover rounded-lg border border-space-blue-light/20 shadow" loading="lazy" />
+                <img src={img} alt={talk.title} class="w-full sm:w-64 h-48 object-cover rounded-lg border border-space-blue-light/20 shadow" loading="lazy" />
               ))}
             </div>
           )}
