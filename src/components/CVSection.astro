@@ -1,98 +1,54 @@
-<section id="cv" class="py-20 bg-gradient-to-b from-space-blue-dark/30 to-transparent">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-      Curriculum Vitae
-    </h2>
-    
-    <div class="grid md:grid-cols-2 gap-12">
-      <!-- Education -->
-      <div>
-        <h3 class="text-2xl font-semibold text-space-blue-light mb-6 flex items-center">
-          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7" />
-          </svg>
-          Education
-        </h3>
-        <div class="space-y-6">
-          <div class="group border-l-4 border-space-blue pl-4 hover:border-space-orange transition-colors duration-300">
-            <h4 class="text-white font-semibold group-hover:text-space-orange-light transition-colors">PhD in Astrophysics</h4>
-            <p class="text-space-blue-light">Institute of Space Science (ICE), UAB</p>
-            <p class="text-gray-400">Oct 2020 - Oct 2024</p>
-            <p class="text-gray-300 mt-2">Search for transient events and pulsars in multi-frequency data</p>
-          </div>
-          <div class="group border-l-4 border-space-blue pl-4 hover:border-space-orange transition-colors duration-300">
-            <h4 class="text-white font-semibold group-hover:text-space-orange-light transition-colors">M.Sc in Astrophysics and Space Science</h4>
-            <p class="text-space-blue-light">University of Cape Town</p>
-            <p class="text-gray-400">Feb 2017 - Dec 2019</p>
-          </div>
-          <div class="group border-l-4 border-space-blue pl-4 hover:border-space-orange transition-colors duration-300">
-            <h4 class="text-white font-semibold group-hover:text-space-orange-light transition-colors">B.Sc in Astronomy and Meteorology</h4>
-            <p class="text-space-blue-light">Omdurman Islamic University</p>
-            <p class="text-gray-400">Aug 2008 - Jan 2012</p>
-          </div>
-        </div>
-      </div>
+---
+const publications = [
+  { year: '2024', title: 'SGR J1935+2154', journal: 'ApJ 965, 87', href: 'https://doi.org/10.3847/1538-4357/ad293b', firstAuthor: true },
+  { year: '2023', title: 'Swift J1818.0−1607', journal: 'ApJ 943, 20', href: 'https://doi.org/10.3847/1538-4357/aca528', firstAuthor: true },
+  { year: '2024', title: 'PSR J1846−0258', journal: 'ApJ 976, 56', href: 'https://doi.org/10.3847/1538-4357/ad8226' },
+  { year: '2021', title: 'XTE J1810−197', journal: 'MNRAS 504, 5244', href: '/publications' }
+];
+const capabilities = [
+  { title: 'Scientific Data Analysis', text: 'Python, NumPy, SciPy, Astropy, Matplotlib, astronomical data reduction, and statistical analysis.' },
+  { title: 'Signal Processing & Transient Detection', text: 'Time-series analysis, FFT and FFA methods, periodicity searches, transient detection, and pipeline development.' },
+  { title: 'Scientific Computing', text: 'Linux, Bash, Git and GitHub, high-performance computing, and SLURM.' },
+  { title: 'Astronomical Instrumentation & Software', text: 'XMM-Newton SAS, NuSTAR NUPIPELINE, NICERDAS, NICERsoft, XSPEC, TEMPO2, CASA, and PSRCHIVE.' }
+];
+const education = [
+  { date: '2020–2024', degree: 'PhD, Astrophysics', institution: 'ICE-CSIC / Autonomous University of Barcelona', thesis: true },
+  { date: '2017–2019', degree: 'MSc, Astrophysics & Space Science', institution: 'University of Cape Town' },
+  { date: '2016', degree: 'BSc Honours, Astrophysics & Space Science', institution: 'University of Cape Town' },
+  { date: '2008–2012', degree: 'BSc, Astronomy & Meteorology', institution: 'Omdurman Islamic University' }
+];
+---
 
-      <!-- Experience -->
-      <div>
-        <h3 class="text-2xl font-semibold text-space-blue-light mb-6 flex items-center">
-          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          Work Experience
-        </h3>
-        <div class="space-y-6">
-          <div class="group border-l-4 border-space-blue pl-4 hover:border-space-orange transition-colors duration-300">
-            <h4 class="text-white font-semibold group-hover:text-space-orange-light transition-colors">Lecturer</h4>
-            <p class="text-space-blue-light">Omdurman Islamic University</p>
-            <p class="text-gray-400">Nov 2019 - Jun 2020</p>
-            <p class="text-gray-300 mt-2">Teaching Astronomical Application and General Astrophysics</p>
-          </div>
-          <div class="group border-l-4 border-space-blue pl-4 hover:border-space-orange transition-colors duration-300">
-            <h4 class="text-white font-semibold group-hover:text-space-orange-light transition-colors">Teaching Assistant</h4>
-            <p class="text-space-blue-light">Omdurman Islamic University</p>
-            <p class="text-gray-400">Feb 2014 - Jan 2016</p>
-          </div>
-        </div>
+<section id="overview" class="pb-20 pt-28">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <header class="rounded-3xl border border-space-blue-light/20 bg-space-blue-dark/65 p-7 shadow-xl md:p-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-space-orange-light">Curriculum Vitae</p>
+      <div class="mt-5 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div><h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Abubakr Ibrahim</h1><p class="mt-3 text-lg font-medium text-space-blue-light sm:text-xl">Astrophysicist | Compact Objects & High-Energy Transients | Computational Research</p><p class="mt-5 max-w-3xl leading-7 text-slate-100">Observational astrophysicist specialising in magnetars, neutron stars, and high-energy transient phenomena. My work combines multiwavelength observations, scientific data analysis, and computational methods, alongside contributions to international scientific collaboration, education, and outreach.</p></div>
+        <div class="flex flex-wrap gap-3 lg:justify-end"><a href="/documents/Abubakr_Ibrahim_CV.pdf" target="_blank" rel="noopener noreferrer" class="rounded-full bg-space-orange px-5 py-3 font-semibold text-white transition hover:bg-space-orange-light">Download Full CV ↓</a><a href="https://orcid.org/0000-0002-5663-1712" target="_blank" rel="noopener noreferrer" class="rounded-full border border-space-blue-light/40 px-5 py-3 font-semibold text-white transition hover:border-space-orange-light hover:text-space-blue-light">ORCID</a><a href="https://www.linkedin.com/in/abubakryagob/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-space-blue-light/40 px-5 py-3 font-semibold text-white transition hover:border-space-orange-light hover:text-space-blue-light">LinkedIn</a></div>
       </div>
-    </div>
+      <div class="mt-8 flex flex-wrap gap-3 text-sm"><span class="rounded-full border border-space-blue-light/20 bg-black/10 px-4 py-2 text-slate-100">PhD in Astrophysics</span><span class="rounded-full border border-space-blue-light/20 bg-black/10 px-4 py-2 text-slate-100">Two first-author ApJ publications</span><span class="rounded-full border border-space-blue-light/20 bg-black/10 px-4 py-2 text-slate-100">Four peer-reviewed publications</span></div>
+    </header>
+    <nav aria-label="CV sections" class="sticky top-16 z-30 mt-5 overflow-x-auto rounded-xl border border-space-blue-light/15 bg-[#023047]/95 p-2 backdrop-blur"><div class="flex min-w-max gap-1"><a href="#overview" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-200 hover:bg-space-blue-light/10">Overview</a><a href="#research" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-200 hover:bg-space-blue-light/10">Research</a><a href="#computational" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-200 hover:bg-space-blue-light/10">Computational Work</a><a href="#leadership" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-200 hover:bg-space-blue-light/10">Leadership</a><a href="#academic-journey" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-200 hover:bg-space-blue-light/10">Academic Journey</a></div></nav>
 
-    <div class="mt-12">
-      <h3 class="text-2xl font-semibold text-space-blue-light mb-6 flex items-center justify-center md:justify-start">
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-        Professional Memberships
-      </h3>
-      <div class="max-w-2xl mx-auto md:mx-0 border-l-4 border-space-blue pl-4 hover:border-space-orange transition-colors duration-300">
-        <h4 class="text-white font-semibold">African Astronomical Society (AfAS)</h4>
-        <p class="text-space-blue-light">Full Member</p>
-        <p class="text-gray-400">2021 – present</p>
-        <a href="http://www.africanastronomicalsociety.org/" target="_blank" rel="noopener noreferrer" class="text-space-orange-light hover:text-space-blue-light text-sm font-medium mt-2 inline-block">AfAS website →</a>
-      </div>
-          <div class="max-w-2xl mx-auto md:mx-0 border-l-4 border-space-blue pl-4 mt-6 hover:border-space-orange transition-colors duration-300">
-            <h4 class="text-white font-semibold">International Astronomical Union (IAU)</h4>
-            <p class="text-space-blue-light">Member</p>
-            <p class="text-gray-400">July 2026 – present</p>
-          </div>
-    </div>
+    <section id="research" class="scroll-mt-28 py-16"><div class="max-w-3xl"><p class="text-sm font-semibold uppercase tracking-[0.18em] text-space-orange-light">01 · Primary focus</p><h2 class="mt-2 text-3xl font-bold text-white">Astrophysics & Research</h2><p class="mt-3 text-lg text-space-blue-light">Exploring compact objects and high-energy transient phenomena through multiwavelength observations.</p></div><div class="mt-8 grid gap-6 lg:grid-cols-2">
+      <article class="overflow-hidden rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50 lg:col-span-2 lg:grid lg:grid-cols-2"><img src="/images/gallery/swiftJ1818.png" alt="VLA image of Swift J1818.0−1607 and surrounding diffuse emission" class="h-64 w-full object-cover lg:h-full" loading="lazy" /><div class="p-6"><p class="text-sm font-semibold text-space-orange-light">Published research · 2023 ApJ</p><h3 class="mt-2 text-2xl font-semibold text-white">Swift J1818.0−1607</h3><p class="mt-3 leading-7 text-slate-200">A multiwavelength investigation of the first outburst of a young magnetar, using XMM-Newton and NuSTAR data reduction, broadband spectral analysis across multiple epochs, extended diffuse X-ray emission, and complementary VLA observations.</p><a href="https://doi.org/10.3847/1538-4357/aca528" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex font-semibold text-space-blue-light hover:text-space-orange-light hover:underline">Read the 2023 ApJ publication →</a></div></article>
+      <article class="overflow-hidden rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50"><img src="/images/gallery/sgrj1935a.png" alt="X-ray spectrum of magnetar SGR J1935+2154" class="h-48 w-full object-cover" loading="lazy" /><div class="p-6"><p class="text-sm font-semibold text-space-orange-light">Published research · 2024 ApJ</p><h3 class="mt-2 text-xl font-semibold text-white">SGR J1935+2154</h3><p class="mt-3 text-sm leading-6 text-slate-200">X-ray and radio investigation of the 2022 magnetar reactivation, including XMM-Newton and NuSTAR observations, phase-resolved spectroscopy, NICER timing analysis, and radio burst investigation.</p><a href="https://doi.org/10.3847/1538-4357/ad293b" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex font-semibold text-space-blue-light hover:text-space-orange-light hover:underline">Read the 2024 ApJ publication →</a></div></article>
+      <article class="overflow-hidden rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50"><img src="/images/gallery/Artist_impression_active-magnetar-Swift-J1818.0-1607_magnetic_fields.jpg" alt="Artist impression of an active magnetar" class="h-48 w-full object-cover" loading="lazy" /><div class="p-6"><p class="text-sm font-semibold text-space-orange-light">Ongoing research · manuscript in preparation</p><h3 class="mt-2 text-xl font-semibold text-white">ZTF J1901+1458</h3><p class="mt-3 text-sm leading-6 text-slate-200">Ongoing investigation of radio emission from an isolated magnetic white dwarf pulsar using ASKAP and VLA archival data, radio imaging, dynamic-spectra analysis, and international collaboration.</p></div></article>
+    </div><div class="mt-8 rounded-2xl border border-space-blue-light/15 bg-black/10 p-5"><div class="flex flex-wrap items-center justify-between gap-3"><h3 class="text-xl font-semibold text-white">Research publications</h3><a href="/publications" class="font-semibold text-space-orange-light hover:text-space-blue-light hover:underline">View all publications →</a></div><div class="mt-4 grid gap-3 sm:grid-cols-2">{publications.map((publication) => <a href={publication.href} target={publication.href.startsWith('http') ? '_blank' : undefined} rel={publication.href.startsWith('http') ? 'noopener noreferrer' : undefined} class="rounded-xl border border-space-blue-light/15 px-4 py-3 text-sm text-slate-200 transition hover:border-space-orange/60 hover:bg-space-blue-light/5"><span class="font-semibold text-space-orange-light">{publication.year}</span> · <span class="font-medium text-white">{publication.title}</span>, {publication.journal}{publication.firstAuthor && <span class="ml-2 text-xs text-space-blue-light">First author</span>}</a>)}</div></div></section>
 
-    <div class="mt-12 text-center">
-      <a
-        href="/documents/Abubakr_Ibrahim_CV.pdf"
-        target="_blank"
-        class="inline-flex items-center bg-space-blue/20 text-white px-8 py-3 rounded-full font-semibold hover:bg-space-blue/30 transition-all duration-200 border border-space-blue-light/30 hover:border-space-blue-light/50 group"
-      >
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        Download Full CV
-        <svg class="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </a>
-    </div>
+    <section id="computational" class="scroll-mt-28 border-y border-space-blue-light/10 py-16"><div class="max-w-3xl"><p class="text-sm font-semibold uppercase tracking-[0.18em] text-space-orange-light">02 · Methods</p><h2 class="mt-2 text-3xl font-bold text-space-blue-light">Computational Research & Data Analysis</h2><p class="mt-3 text-lg text-slate-100">Developing computational approaches to analyse, interpret, and visualise complex scientific datasets.</p></div><div class="mt-8 grid gap-4 sm:grid-cols-2">{capabilities.map((capability) => <article class="rounded-xl border border-space-blue-light/15 bg-space-blue-dark/35 p-5"><h3 class="font-semibold text-white">{capability.title}</h3><p class="mt-2 text-sm leading-6 text-slate-200">{capability.text}</p></article>)}</div><div class="mt-8 grid gap-6 md:grid-cols-3"><article class="rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50 p-5"><img src="/images/research/eBANDERAS.png" alt="eBANDERAS transient search pipeline visualisation" class="h-32 w-full rounded-xl object-cover" loading="lazy" /><h3 class="mt-4 text-xl font-semibold text-white">eBANDERAS</h3><p class="mt-2 text-sm leading-6 text-slate-200">Automated X-ray transient search pipeline for scientific survey data.</p><a href="/research" class="mt-4 inline-flex text-sm font-semibold text-space-orange-light hover:text-space-blue-light hover:underline">Related research →</a></article><article class="rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50 p-5"><img src="/images/research/magnetar-lightcurve.png" alt="Magnetar multiwavelength lightcurve" class="h-32 w-full rounded-xl object-cover" loading="lazy" /><h3 class="mt-4 text-xl font-semibold text-white">Multiwavelength Data Analysis</h3><p class="mt-2 text-sm leading-6 text-slate-200">X-ray and radio observations, timing analysis, and signal processing for compact objects and transients.</p><a href="/research" class="mt-4 inline-flex text-sm font-semibold text-space-orange-light hover:text-space-blue-light hover:underline">Related research →</a></article><article class="rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50 p-5"><img src="/images/gallery/sgrj1935b.png" alt="Pulsar data visualisation" class="h-32 w-full rounded-xl object-cover" loading="lazy" /><h3 class="mt-4 text-xl font-semibold text-white">Pulsar Galaxy Explorer</h3><p class="mt-2 text-sm leading-6 text-slate-200">Interactive visualisation of 4,342 pulsars using Three.js and WebGL.</p><a href="https://github.com/abubakryagob/pulsar-galaxy-explorer" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex text-sm font-semibold text-space-orange-light hover:text-space-blue-light hover:underline">View on GitHub →</a></article></div><p class="mt-6 text-sm leading-6 text-slate-300">I am interested in extending this scientific computing experience towards broader data science and applied AI, while remaining grounded in research-driven problem solving.</p></section>
+
+    <section id="leadership" class="scroll-mt-28 py-16"><div class="max-w-3xl"><p class="text-sm font-semibold uppercase tracking-[0.18em] text-space-orange-light">03 · Contribution</p><h2 class="mt-2 text-3xl font-bold text-white">Scientific Leadership & Engagement</h2><p class="mt-3 text-lg text-space-blue-light">Connecting researchers, institutions, and communities through science.</p></div><div class="mt-8 grid gap-6 lg:grid-cols-3"><article class="overflow-hidden rounded-2xl border border-space-orange/30 bg-space-blue-dark/50"><img src="/images/outreach/PWF_SUDAN_FinalPoster.jpeg" alt="Physics Without Frontiers Sudan programme poster" class="h-40 w-full object-cover" loading="lazy" /><div class="p-5"><p class="text-sm font-semibold text-space-orange-light">2023 to present</p><h3 class="mt-2 text-xl font-semibold text-white">Building Scientific Infrastructure</h3><p class="mt-1 font-medium text-space-blue-light">Photon SCNSM · Co-founder & General Manager</p><p class="mt-3 text-sm leading-6 text-slate-200">Co-founded and manage a scientific initiative connecting Sudanese scientific talent with international research and educational opportunities through training, mentorship, institutional partnerships, and scientific collaboration.</p><a href="https://www.photoncentre.org/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex text-sm font-semibold text-space-orange-light hover:text-space-blue-light hover:underline">Visit Photon SCNSM →</a></div></article><article class="overflow-hidden rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50"><img src="/images/gallery/PWFll_Sudan_Final_Poster.jpeg" alt="Expanding Horizons in Physics in Sudan II poster" class="h-40 w-full object-cover" loading="lazy" /><div class="p-5"><h3 class="text-xl font-semibold text-white">Coordinating International Education</h3><p class="mt-3 text-sm leading-6 text-slate-200"><strong class="text-space-blue-light">2025:</strong> Lead Coordinator, Physics Without Frontiers, Sudan, 12 online seminars with international volunteers and more than 90 participants.</p><p class="mt-3 text-sm leading-6 text-slate-200"><strong class="text-space-blue-light">2026:</strong> General Coordinator, Expanding Horizons in Physics in Sudan II, a nine-day workshop in density functional theory and computational materials science.</p><div class="mt-4 flex gap-4 text-sm font-semibold"><a href="https://indico.ictp.it/event/11030/overview" target="_blank" rel="noopener noreferrer" class="text-space-orange-light hover:underline">2025 programme</a><a href="https://indico.ictp.it/event/11353/" target="_blank" rel="noopener noreferrer" class="text-space-orange-light hover:underline">2026 programme</a></div></div></article><article class="overflow-hidden rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/50"><img src="/images/outreach/zoolastro_logo.jpeg" alt="Zool Astro logo" class="h-40 w-full object-cover" loading="lazy" /><div class="p-5"><h3 class="text-xl font-semibold text-white">Connecting Science and Society</h3><ul class="mt-3 space-y-2 text-sm leading-6 text-slate-200"><li><strong class="text-space-blue-light">Zool Astro:</strong> Founder & Director</li><li><strong class="text-space-blue-light">IAU Office for Astronomy Outreach:</strong> Vice Manager, Sudan activities</li><li><strong class="text-space-blue-light">SudanBridge:</strong> Mentor</li></ul><a href="/outreach" class="mt-4 inline-flex text-sm font-semibold text-space-orange-light hover:text-space-blue-light hover:underline">Explore outreach →</a></div></article></div><p class="mt-5 text-sm text-slate-300">These scientific leadership, education, and community contributions are voluntary and community roles.</p></section>
+
+    <section id="academic-journey" class="scroll-mt-28 border-t border-space-blue-light/10 py-16"><div class="max-w-3xl"><p class="text-sm font-semibold uppercase tracking-[0.18em] text-space-orange-light">04 · Foundation</p><h2 class="mt-2 text-3xl font-bold text-space-blue-light">Academic Journey & Teaching</h2></div><div class="mt-8 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]"><ol class="space-y-7 border-l-2 border-space-blue-light/30 pl-6">{education.map((item) => <li class="relative"><span class="absolute -left-[1.94rem] top-1 h-3 w-3 rounded-full bg-space-orange ring-4 ring-[#023047]"></span><p class="text-sm font-semibold text-space-orange-light">{item.date}</p><h3 class="mt-1 text-lg font-semibold text-white">{item.degree}</h3><p class="text-slate-200">{item.institution}</p>{item.thesis && <a href="https://www.tdx.cat/handle/10803/693188" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex text-sm font-semibold text-space-blue-light hover:text-space-orange-light hover:underline">Read PhD thesis →</a>}</li>)}</ol><div class="rounded-2xl border border-space-blue-light/15 bg-space-blue-dark/40 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-space-orange-light">Teaching</p><h3 class="mt-2 text-xl font-semibold text-white">Omdurman Islamic University</h3><p class="mt-1 text-space-blue-light">Department of Astronomy & Meteorology</p><p class="mt-4 text-slate-200">Tutor → Teaching Assistant → Lecturer</p><details class="mt-5 border-t border-space-blue-light/15 pt-4"><summary class="cursor-pointer font-semibold text-white hover:text-space-blue-light">Teaching and supervision</summary><p class="mt-3 text-sm leading-6 text-slate-200">Taught Astronomical Applications and General Astrophysics as a Lecturer from November 2019 to June 2020, following Teaching Assistant experience from February 2014 to January 2016. The complete CV provides further teaching and supervision details.</p></details></div></div></section>
+
+    <section class="border-t border-space-blue-light/10 py-16"><p class="text-sm font-semibold uppercase tracking-[0.18em] text-space-orange-light">05 · Recognition</p><h2 class="mt-2 text-3xl font-bold text-white">Academic Record & Recognition</h2><div class="mt-7 grid gap-4 md:grid-cols-2"><div class="rounded-xl border border-space-blue-light/15 bg-space-blue-dark/35 p-5"><h3 class="font-semibold text-white">Selected record</h3><ul class="mt-3 space-y-2 text-sm leading-6 text-slate-200"><li>Oral presentations and invited speaking engagements in astrophysics and science communication.</li><li>NASSP scholarships for postgraduate study in astrophysics and space science.</li><li>Forbes Science feature, 2021.</li></ul></div><div class="rounded-xl border border-space-blue-light/15 bg-space-blue-dark/35 p-5"><h3 class="font-semibold text-white">Professional memberships</h3><ul class="mt-3 space-y-2 text-sm leading-6 text-slate-200"><li><a href="http://www.africanastronomicalsociety.org/" target="_blank" rel="noopener noreferrer" class="text-space-blue-light hover:text-space-orange-light hover:underline">African Astronomical Society</a>, Full Member, 2021 to present</li><li>International Astronomical Union, Member, 2026 to present</li></ul></div></div><div class="mt-10 text-center"><a href="/documents/Abubakr_Ibrahim_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full bg-space-orange px-6 py-3 font-semibold text-white transition hover:bg-space-orange-light">Download the complete CV ↓</a></div></section>
   </div>
 </section>
+
+<style>
+  #computational img[src="/images/gallery/sgrj1935b.png"] {
+    content: url('/images/gallery/Pulsar_Galaxy_Explorer.png');
+  }
+</style>
